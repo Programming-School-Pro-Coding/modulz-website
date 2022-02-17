@@ -48,13 +48,6 @@ export const authors = {
     mug: require('../public/mugshots/paul.jpg'),
   },
 
-  pedro: {
-    name: 'Pedro Duarte',
-    twitter: 'peduarte',
-    avatar: 'https://pbs.twimg.com/profile_images/1293852807024521218/1u__xCFD_400x400.jpg',
-    mug: require('../public/mugshots/pedro.jpg'),
-  },
-
   stephen: {
     name: 'Stephen Haney',
     twitter: 'sdothaney',

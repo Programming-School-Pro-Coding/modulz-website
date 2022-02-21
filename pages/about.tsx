@@ -185,52 +185,54 @@ const About = () => {
 
       <Container size={3}>
         <Grid sx={{ gap: [5, 7], gridTemplateColumns: ['1fr 1fr', '1fr 1fr 1fr', '1fr 1fr 1fr 1fr'] }}>
-          {Object.entries(authors).map(([key, author]) => (
-            <Box>
-              <AspectRatio ratio="16:9">
-                <Box
-                  sx={{
-                    height: '100%',
-                    backgroundImage: `url(${author.mug})`,
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center',
-                    filter: 'grayscale(1)',
-                  }}
-                />
-              </AspectRatio>
-              <Box mt={4} px={[0, 2]}>
-                <Text as="p" size={4} weight="medium" mb={1}>
-                  {author.name}
-                </Text>
-                <Flex sx={{ alignItems: 'center' }} mt={2}>
-                  <Link
-                    href={`https://twitter.com/${author.twitter}`}
-                    target="_blank"
-                    rel="noopener"
-                    aria-label={`${author.name}'s twitter account`}
-                  >
-                    <Text size={2}>Twitter</Text>
-                    <Box as="span" ml={1} sx={{ display: 'inline-block', verticalAlign: 'middle' }}>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
-                        <path
-                          d="M5.5 3.5L11.5 3.5L11.5 9.5"
-                          stroke="hsl(208,12%,46%)"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                        <path
-                          d="M3.5 11.5L11.5 3.5"
-                          stroke="hsl(208,12%,46%)"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      </svg>
-                    </Box>
-                  </Link>
-                </Flex>
+          {Object.entries(authors)
+            .filter(([key, author]) => author.hidden !== true)
+            .map(([key, author]) => (
+              <Box>
+                <AspectRatio ratio="16:9">
+                  <Box
+                    sx={{
+                      height: '100%',
+                      backgroundImage: `url(${author.mug})`,
+                      backgroundSize: 'cover',
+                      backgroundPosition: 'center',
+                      filter: 'grayscale(1)',
+                    }}
+                  />
+                </AspectRatio>
+                <Box mt={4} px={[0, 2]}>
+                  <Text as="p" size={4} weight="medium" mb={1}>
+                    {author.name}
+                  </Text>
+                  <Flex sx={{ alignItems: 'center' }} mt={2}>
+                    <Link
+                      href={`https://twitter.com/${author.twitter}`}
+                      target="_blank"
+                      rel="noopener"
+                      aria-label={`${author.name}'s twitter account`}
+                    >
+                      <Text size={2}>Twitter</Text>
+                      <Box as="span" ml={1} sx={{ display: 'inline-block', verticalAlign: 'middle' }}>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                          <path
+                            d="M5.5 3.5L11.5 3.5L11.5 9.5"
+                            stroke="hsl(208,12%,46%)"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                          <path
+                            d="M3.5 11.5L11.5 3.5"
+                            stroke="hsl(208,12%,46%)"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </svg>
+                      </Box>
+                    </Link>
+                  </Flex>
+                </Box>
               </Box>
-            </Box>
-          ))}
+            ))}
         </Grid>
       </Container>
 

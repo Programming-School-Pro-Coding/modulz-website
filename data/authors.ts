@@ -39,7 +39,7 @@ export const authors = {
     name: 'Jenna Smith',
     twitter: 'jjenzz',
     mug: require('../public/mugshots/jenna.jpg'),
-    hidden: false,
+    hidden: true,
   },
 
   lucas: {

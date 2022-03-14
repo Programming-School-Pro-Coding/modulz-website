@@ -142,6 +142,13 @@ export const Footer = () => {
                   </NextLink>
                 </Text>
               </li>
+              <li>
+                <Text as="p" size={3} mt={2} sx={{ lineHeight: '1' }}>
+                  <NextLink href="/privacy" passHref>
+                    <Link variant="fade">Privacy</Link>
+                  </NextLink>
+                </Text>
+              </li>
             </ul>
           </Box>
         </Grid>

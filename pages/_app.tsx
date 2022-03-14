@@ -28,8 +28,8 @@ function App({ Component, pageProps }: AppProps) {
   const router = useRouter();
 
   const isDemoPage = router.pathname.includes('/demo/');
-  const isDarkMode = typeof window !== 'undefined' &&
-    window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const isDarkMode =
+    typeof window !== 'undefined' && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
 
   return (
     <Radix.RadixProvider>
@@ -38,7 +38,9 @@ function App({ Component, pageProps }: AppProps) {
           ...Radix,
           ...RadixIcons,
           h1: (props) => <Radix.Heading size={2} mb={8} sx={{ fontWeight: 500 }} {...props} as="h1" />,
-          h2: (props) => <Radix.Heading size={3} mt={6} mb={2} sx={{ fontWeight: 500, lineHeight: '30px' }} {...props} as="h2" />,
+          h2: (props) => (
+            <Radix.Heading size={3} mt={6} mb={2} sx={{ fontWeight: 500, lineHeight: '30px' }} {...props} as="h2" />
+          ),
           h3: (props) => (
             <Radix.Heading mt={6} mb={1} sx={{ fontWeight: 500, fontSize: 5, lineHeight: '23px' }} {...props} as="h3" />
           ),
@@ -237,7 +239,67 @@ function App({ Component, pageProps }: AppProps) {
           <title>Modulz</title>
           <link rel="icon" href={isDarkMode ? '/favicon-light.png' : '/favicon-dark.png'} />
 
-          <link rel="stylesheet" href="https://core.modulz.app/fonts/fonts.css" />
+          <link
+            rel="preload"
+            href="/fonts/UntitledSansWeb-Regular.woff"
+            as="font"
+            type="font/woff"
+            crossOrigin="anonymous"
+          />
+          <link
+            rel="preload"
+            href="/fonts/UntitledSansWeb-Regular.woff2"
+            as="font"
+            type="font/woff2"
+            crossOrigin="anonymous"
+          />
+          <link
+            rel="preload"
+            href="/fonts/UntitledSansWeb-Medium.woff"
+            as="font"
+            type="font/woff"
+            crossOrigin="anonymous"
+          />
+          <link
+            rel="preload"
+            href="/fonts/UntitledSansWeb-Medium.woff2"
+            as="font"
+            type="font/woff2"
+            crossOrigin="anonymous"
+          />
+          <link
+            rel="preload"
+            href="/fonts/soehne-mono-web-buch.woff"
+            as="font"
+            type="font/woff"
+            crossOrigin="anonymous"
+          />
+          <link
+            rel="preload"
+            href="/fonts/soehne-mono-web-buch.woff2"
+            as="font"
+            type="font/woff2"
+            crossOrigin="anonymous"
+          />
+          <style
+            dangerouslySetInnerHTML={{
+              __html: `
+@font-face {
+  font-family: 'UntitledSans';
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts/UntitledSansWeb-Regular.woff2) format('woff2'), url(/fonts/UntitledSansWeb-Regular.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'UntitledSans';
+  font-weight: 500;
+  font-display: swap;
+  src: url(/fonts/UntitledSansWeb-Medium.woff2) format('woff2'), url(/fonts/UntitledSansWeb-Medium.woff) format('woff');
+}
+`,
+            }}
+          />
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         </Head>
 

@@ -233,8 +233,8 @@ const Privacy = () => {
             If transfer is made between servers in different physical environments, data transfer is performed by establishing VPN between servers, and
             Even if the data is required to be transferred through paper medium, necessary precautions are taken against risks such as theft, loss or being seen by unauthorized persons of confidential information and / or documents containing your personal information, and the document is sent in the category of "classified documents".
             
-            <Heading size="1" sx={{ mb: '5px' }}>RETENTION OF PERSONAL INFORMATION </Heading>
-            We store the personal information we collect as described in this Privacy Notice for as long as you use our Services or as necessary to fulfill the purpose(s) for which it was collected, provide our Services, resolve disputes, establish legal defenses, conduct audits, pursue legitimate business purposes, enforce our agreements, and comply with applicable laws.  
+            <Heading size="1" sx={{ mb: '5px' }}>Retention of personal information</Heading>
+            <Text as="p" size={3} sx={{ lineHeight: '21px', mb: 15 }}>We store the personal information we collect as described in this Privacy Notice for as long as you use our Services or as necessary to fulfill the purpose(s) for which it was collected, provide our Services, resolve disputes, establish legal defenses, conduct audits, pursue legitimate business purposes, enforce our agreements, and comply with applicable laws.</Text>
             
             <Heading size="1" sx={{ mb: '5px' }}>SUPPLEMENTAL NOTICE FOR CALIFORNIA RESIDENTS</Heading>
             This Supplemental California Privacy Notice only applies to our processing of personal information that is subject to the California Consumer Privacy Act of 2018 (“CCPA”). The CCPA provides California residents with the right to know what categories of personal information Modulz has collected about them and whether Modulz disclosed that personal information for a business purpose (e.g., to a service provider) in the preceding 12 months. California residents can find this information below:

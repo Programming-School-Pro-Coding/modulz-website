@@ -1,6 +1,5 @@
 import React from 'react';
 import { Container, Box, Heading, Button, Link, Text, Divider, Flex } from '@modulz/radix';
-import { BetaAccess } from '../components/BetaAccess';
 import TitleAndMetaTags from '../components/TitleAndMetaTags';
 
 const Privacy = () => {
@@ -14,86 +13,88 @@ const Privacy = () => {
             Modulz Privacy Notice
           </Heading>
 
-          <Text size="3" sx={{ lineHeight: '21px' }}>
+          <Text size={3} sx={{ lineHeight: '21px' }}>
             Last Updated: March 3, 2022
           </Text>
 
-          <Text as="p" size="3" sx={{ lineHeight: '21px', mb: 15 }}>
+          <Text as="p" size={3} sx={{ lineHeight: '21px', mb: 15 }}>
             Modulz, Inc. provides users with a code-based designing tool to allow our customers to design and prototype with real components. This Privacy Notice is designed to help you understand how we collect, use, process, and share your personal information and to help you understand and exercise your privacy rights.
           </Text>
 
           <nav>
-            <Link variant="accent" href="#hello"><Text as="p" size="3" sx={{ lineHeight: '21px', mb: 15 }}>SCOPE</Text></Link>
-            <Text as="p" size="3" sx={{ lineHeight: '21px', mb: 15 }}>PERSONAL INFORMATION WE COLLECT</Text>
-            <Text as="p" size="3" sx={{ lineHeight: '21px', mb: 15 }}>HOW WE USE YOUR INFORMATION</Text>
-            <Text as="p" size="3" sx={{ lineHeight: '21px', mb: 15 }}>HOW WE DISCLOSE YOUR INFORMATION</Text>
-            <Text as="p" size="3" sx={{ lineHeight: '21px', mb: 15 }}>YOUR PRIVACY CHOICES AND RIGHTS</Text>
-            <Text as="p" size="3" sx={{ lineHeight: '21px', mb: 15 }}>SECURITY OF YOUR INFORMATION</Text>
-            <Text as="p" size="3" sx={{ lineHeight: '21px', mb: 15 }}>INTERNATIONAL DATA TRANSFERS </Text>
-            <Text as="p" size="3" sx={{ lineHeight: '21px', mb: 15 }}>RETENTION OF PERSONAL INFORMATION</Text>
-            <Text as="p" size="3" sx={{ lineHeight: '21px', mb: 15 }}>SUPPLEMENTAL NOTICE FOR CALIFORNIA RESIDENTS</Text>
-            <Text as="p" size="3" sx={{ lineHeight: '21px', mb: 15 }}>SUPPLEMENTAL NOTICE FOR NEVADA RESIDENTS</Text>
-            <Text as="p" size="3" sx={{ lineHeight: '21px', mb: 15 }}>CHILDREN’S INFORMATION</Text>
-            <Text as="p" size="3" sx={{ lineHeight: '21px', mb: 15 }}>OTHER PROVISIONS</Text>
-            <Text as="p" size="3" sx={{ lineHeight: '21px', mb: 15 }}>CONTACT US</Text>
+            <ul style={{ listStyle: 'none', margin: '0 0 15px 0', padding: 0, }}>
+              <li><Link href="#hello" sx={{ display: 'inline-block' }}><Text size={3} sx={{ lineHeight: '21px', color: 'inherit' }}>Scope</Text></Link></li>
+              <li><Link href="#hello" sx={{ display: 'inline-block' }}><Text as="p" size={3} sx={{ lineHeight: '21px', color: 'inherit' }}>Personal information we collect</Text></Link></li>
+              <li><Link href="#hello" sx={{ display: 'inline-block' }}><Text as="p" size={3} sx={{ lineHeight: '21px', color: 'inherit' }}>How we use your information</Text></Link></li>
+              <li><Link href="#hello" sx={{ display: 'inline-block' }}><Text as="p" size={3} sx={{ lineHeight: '21px', color: 'inherit' }}>How we disclose your information</Text></Link></li>
+              <li><Link href="#hello" sx={{ display: 'inline-block' }}><Text as="p" size={3} sx={{ lineHeight: '21px', color: 'inherit' }}>Your privacy choices and rights</Text></Link></li>
+              <li><Link href="#hello" sx={{ display: 'inline-block' }}><Text as="p" size={3} sx={{ lineHeight: '21px', color: 'inherit' }}>Security of your information</Text></Link></li>
+              <li><Link href="#hello" sx={{ display: 'inline-block' }}><Text as="p" size={3} sx={{ lineHeight: '21px', color: 'inherit' }}>International data transfers </Text></Link></li>
+              <li><Link href="#hello" sx={{ display: 'inline-block' }}><Text as="p" size={3} sx={{ lineHeight: '21px', color: 'inherit' }}>Retention of personal information</Text></Link></li>
+              <li><Link href="#hello" sx={{ display: 'inline-block' }}><Text as="p" size={3} sx={{ lineHeight: '21px', color: 'inherit' }}>Supplemental notice for california residents</Text></Link></li>
+              <li><Link href="#hello" sx={{ display: 'inline-block' }}><Text as="p" size={3} sx={{ lineHeight: '21px', color: 'inherit' }}>Supplemental notice for Nevada residents</Text></Link></li>
+              <li><Link href="#hello" sx={{ display: 'inline-block' }}><Text as="p" size={3} sx={{ lineHeight: '21px', color: 'inherit' }}>Children's information</Text></Link></li>
+              <li><Link href="#hello" sx={{ display: 'inline-block' }}><Text as="p" size={3} sx={{ lineHeight: '21px', color: 'inherit' }}>Other provisions</Text></Link></li>
+              <li><Link href="#hello" sx={{ display: 'inline-block' }}><Text as="p" size={3} sx={{ lineHeight: '21px', color: 'inherit' }}>Contact us</Text></Link></li>
+            </ul>
           </nav>
 
-          <Heading size="1" id="hello">SCOPE</Heading>
-          <Text as="p" size="3" sx={{ lineHeight: '21px', mb: 15 }}>
+          <Heading size="1" id="hello">1. SCOPE</Heading>
+          <Text as="p" size={3} sx={{ lineHeight: '21px', mb: 15 }}>
             This Privacy Notice applies to personal information processed by us, including on our websites, mobile applications, and other online or offline offerings. To make this Privacy Notice easier to read, our websites, mobile applications, and other offerings are collectively called “Services.”
           </Text>
 
-          <Heading size="1">1. PERSONAL INFORMATION WE COLLECT</Heading>
-          <Text as="p" size="3" sx={{ lineHeight: '21px', mb: 15 }}>The categories of personal information we collect depend on how you interact with us, our Services, and the requirements of applicable law.  We collect information that you provide to us, information we obtain automatically or through non-automatic methods provided that it is part of the data recording system when you use our Services, and information from other sources such as third-party services and organizations, as described below.</Text>
+          <Heading size="1" sx={{ mb: '5px' }}>2. PERSONAL INFORMATION WE COLLECT</Heading>
+          <Text as="p" size={3} sx={{ lineHeight: '21px', mb: 15 }}>The categories of personal information we collect depend on how you interact with us, our Services, and the requirements of applicable law.  We collect information that you provide to us, information we obtain automatically or through non-automatic methods provided that it is part of the data recording system when you use our Services, and information from other sources such as third-party services and organizations, as described below.</Text>
             
-          <Text as="p" size="3" sx={{ lineHeight: '21px', mb: 15 }}>We do not generally require you to disclose any sensitive information (e.g., details of race, religious belief, sexual orientation or membership of a trade union) to us.  If you do provide us with sensitive information for any reason, you consent to us collecting that information and using and disclosing that information for the purpose for which you disclosed it to us and as permitted by the Australian Privacy Act 1988 (Cth) (“Privacy Act”) and other relevant laws.</Text>
+          <Text as="p" size={3} sx={{ lineHeight: '21px', mb: 15 }}>We do not generally require you to disclose any sensitive information (e.g., details of race, religious belief, sexual orientation or membership of a trade union) to us.  If you do provide us with sensitive information for any reason, you consent to us collecting that information and using and disclosing that information for the purpose for which you disclosed it to us and as permitted by the Australian Privacy Act 1988 (Cth) (“Privacy Act”) and other relevant laws.</Text>
             
-          <Heading size="1">A. Information You Provide to Us Directly</Heading>
-          <Text as="p" size="3" sx={{ lineHeight: '21px', mb: 15 }}>We may collect the following personal information that you provide to us.</Text>
+          <Heading size="1" sx={{ mb: '5px' }}>A. Information You Provide to Us Directly</Heading>
+          <Text as="p" size={3} sx={{ lineHeight: '21px', mb: 15 }}>We may collect the following personal information that you provide to us.</Text>
 
               <ul>
                 <li>
-                  <Text as="p" size="3" sx={{ lineHeight: '21px', mb: 15 }}>
+                  <Text as="p" size={3} sx={{ lineHeight: '21px', mb: 15 }}>
                     Account Creation. We may collect information when you create an account, such as first name, last name,  email address, Twitter handle, and role at company.
                   </Text>
                 </li>
                 <li>
-                  <Text as="p" size="3" sx={{ lineHeight: '21px', mb: 15 }}>
+                  <Text as="p" size={3} sx={{ lineHeight: '21px', mb: 15 }}>
                     Purchases. We may collect personal information and details associated with your purchases, including payment information.  Any payments made via our Services are processed by third-party payment processors. We do not directly collect or store any payment card information entered through our Services, but we may receive information associated with your payment card information (e.g., your billing details).
                   </Text>
                 </li>
                 <li>
-                  <Text as="p" size="3" sx={{ lineHeight: '21px', mb: 15 }}>
+                  <Text as="p" size={3} sx={{ lineHeight: '21px', mb: 15 }}>
                     Your Communications with Us. We may collect personal information, such as email address, phone number, or mailing address when you request information about our Services, register for our newsletter or loyalty program, request customer or technical support, apply for a job, or otherwise communicate with us.
                   </Text>
                 </li>
                 <li>
-                  <Text as="p" size="3" sx={{ lineHeight: '21px', mb: 15 }}>
+                  <Text as="p" size={3} sx={{ lineHeight: '21px', mb: 15 }}>
                     Surveys. We may contact you to participate in surveys. If you decide to participate, you may be asked to provide certain information which may include personal information.
                   </Text>
                 </li>
                 <li>
-                  <Text as="p" size="3" sx={{ lineHeight: '21px', mb: 15 }}>
+                  <Text as="p" size={3} sx={{ lineHeight: '21px', mb: 15 }}>
                     Interactive Features. We and others who use our Services may collect personal information that you submit or make available through our interactive features (e.g., messaging and chat features, commenting functionalities, forums, blogs, and social media pages). Any information you provide using the public sharing features of the Services (referred to herein as “User Content”) will be considered “public,” unless otherwise required by applicable law, and is not subject to the privacy protections referenced herein. Please exercise caution before revealing any information that may identify you in the real world to other users.
                   </Text>
                 </li>
                 <li>
-                  <Text as="p" size="3" sx={{ lineHeight: '21px', mb: 15 }}>
+                  <Text as="p" size={3} sx={{ lineHeight: '21px', mb: 15 }}>
                     Sweepstakes or Contests. We may collect personal information you provide for any sweepstakes or contests that we offer. In some jurisdictions, we are required to publicly share information of sweepstakes and contest winners.
                   </Text>
                 </li>
                 <li>
-                  <Text as="p" size="3" sx={{ lineHeight: '21px', mb: 15 }}>
+                  <Text as="p" size={3} sx={{ lineHeight: '21px', mb: 15 }}>
                     Conferences, Trade Shows, and Other Events. We may collect personal information from individuals when we attend conferences, trade shows, and other events. 
                   </Text>
                 </li>
                 <li>
-                  <Text as="p" size="3" sx={{ lineHeight: '21px', mb: 15 }}>
+                  <Text as="p" size={3} sx={{ lineHeight: '21px', mb: 15 }}>
                     Business Development and Strategic Partnerships. We may collect personal information from individuals and third parties to assess and pursue potential business opportunities. 
                   </Text>
                 </li>
                 <li>
-                  <Text as="p" size="3" sx={{ lineHeight: '21px', mb: 15 }}>
+                  <Text as="p" size={3} sx={{ lineHeight: '21px', mb: 15 }}>
                     Job Applications. We may post job openings and opportunities on our Services. If you reply to one of these postings by submitting your application, CV and/or cover letter to us, we will collect and use your information to assess your qualifications.
                   </Text>
                 </li>
@@ -129,7 +130,8 @@ const Privacy = () => {
             Social Media Platforms. Our Services may contain social media buttons such as [insert based on client] (that might include widgets such as the “share this” button or other interactive mini programs). These features may collect your IP address, which page you are visiting on our Services, and may set a cookie to enable the feature to function properly. Your interactions with these platforms are governed by the Privacy Notice of the company providing it.
             Information Collected from Other Sources
             We may obtain information about you from other sources, including through third-party services and organizations. For example, if you access our Services through a third-party application, such as an app store, a third-party login service, or a social networking site, we may collect information about you from that third-party application that you have made available via your privacy settings. 
-            HOW WE USE YOUR INFORMATION
+            
+            <Heading size="1" sx={{ mb: '5px' }}>HOW WE USE YOUR INFORMATION</Heading>
             We use your information for a variety of business purposes, including to provide our Services, for administrative purposes, and to market our products and Services, as described below.
             Provide Our Services
             We use your information to fulfil our contract with you and provide you with our Services, such as:
@@ -166,7 +168,8 @@ const Privacy = () => {
             De-identified and Aggregated Information. We may use personal information and other information about you to create de-identified and/or aggregated information, such as de-identified demographic information, de-identified location information, information about the device from which you access our Services, or other analyses we create.
             Share Content with Friends or Colleagues. Our Services may offer various tools and functionalities. For example, we may allow you to provide information about your friends through our referral services. Our referral services may allow you to forward or share certain content with a friend or colleague, such as an email inviting your friend to use our Services. Please only share with us contact information of people with whom you have a relationship (e.g., relative, friend neighbor, or co-worker).
             Business Purposes. We may collect your personal information in accordance with the laws based on the reasons stated under Articles 5 and 6 of the Law and within the scope of fulfilling our obligations, carrying out the business process and/or  creating of a common database with our shareholder(s), as necessary to process personal information (including but not limited to sensitive personal information) of the parties to an agreement. We will process this personal information provided that it is directly related to setting up of an agreement or its performance and it is necessary to process personal information (including but not limited to sensitive personal information) for our legitimate interests, without damaging your fundamental rights and freedoms.
-            HOW WE DISCLOSE YOUR INFORMATION
+            
+            <Heading size="1" sx={{ mb: '5px' }}>HOW WE DISCLOSE YOUR INFORMATION</Heading>
             We disclose your information to third parties for a variety of business purposes, including to provide our Services, to protect us or others, or in the event of a major business transaction such as a merger, sale, or asset transfer, as described below. 
             Disclosures to Provide our Services
             The categories of third parties with whom we may share your information are described below. 
@@ -183,7 +186,8 @@ const Privacy = () => {
             We may access, preserve, and disclose any information we store associated with you to external parties if we, in good faith, believe doing so is required or appropriate to: comply with law enforcement or national security requests and legal process, such as a court order or subpoena; protect your, our, or others’ rights, property, or safety; enforce our policies or contracts; collect amounts owed to us; or assist with an investigation or prosecution of suspected or actual illegal activity.
             Disclosure in the Event of Merger, Sale, or Other Asset Transfers
             If we are involved in a merger, acquisition, financing due diligence, reorganization, bankruptcy, receivership, purchase or sale of assets, or transition of service to another provider, your information may be sold or transferred as part of such a transaction, as permitted by law and/or contract.
-            YOUR PRIVACY CHOICES AND RIGHTS
+            
+            <Heading size="1" sx={{ mb: '5px' }}>YOUR PRIVACY CHOICES AND RIGHTS</Heading>
             Your Privacy Choices. The privacy choices you may have about your personal information are determined by applicable law and are described below. 
             Email and Telephone Communications. If you receive an unwanted email from us, you can use the unsubscribe link found at the bottom of the email to opt out of receiving future emails. Note that you will continue to receive transaction-related emails regarding products or Services you have requested. We may also send you certain non-promotional communications regarding us and our Services, and you will not be able to opt out of those communications (e.g., communications regarding our Services or updates to our Terms or this Privacy Notice). 
             We process requests to be placed on do-not-mail, do-not-phone, and do-not-contact lists as required by applicable law.
@@ -203,7 +207,8 @@ const Privacy = () => {
             Be informed about third parties with which your personal information has been shared; and
             Request the review of decisions taken exclusively based on automated processing if that could affect data subject rights.
             If you would like to exercise any of these rights, please contact us as set forth in “Contact Us” below. We will process such requests in accordance with applicable laws.
-            SECURITY OF YOUR INFORMATION
+            
+            <Heading size="1" sx={{ mb: '5px' }}>SECURITY OF YOUR INFORMATION</Heading>
             We take steps to ensure that your information is treated securely and in accordance with this Privacy Notice. The files and records containing your personal information will be kept in our offices and/or on our servers or those of our service providers and only those employees that require it for the purposes of their duties will have access to this file. Unfortunately, no system is 100% secure, and we cannot ensure or warrant the security of any information you provide to us. We have taken appropriate safeguards to require that your personal information will remain protected and require our third-party service providers and partners to have appropriate safeguards as well. To the fullest extent permitted by applicable law, we do not accept liability for unauthorized disclosure.
             By using our Services or providing personal information to us, you agree that we may communicate with you electronically regarding security, privacy, and administrative issues relating to your use of our Services. If we learn of a security system’s breach, we may attempt to notify you electronically by posting a notice on our Services, by mail or by sending an email to you.
             In addition, we determine and implement systematic, clearly defined, manageable and sustainable policies and procedures for the security of your sensitive personal information.
@@ -215,7 +220,8 @@ const Privacy = () => {
             (e)	In cases where your data is accessed via software, we fulfill the user authorizations of this software and regularly perform the security tests of these software and record the test results in question.
             (f)	We provide at least a two-step authentication system if remote access to your data is required.
             We prevent unauthorized entry and exit in order to ensure the physical security of these environments by taking adequate safe precautions and routinely inspecting your personal information processed, stored and / or accessible in our physical environments.
-            INTERNATIONAL DATA TRANSFERS 
+            
+            <Heading size="1" sx={{ mb: '5px' }}>INTERNATIONAL DATA TRANSFERS </Heading>
             All information processed by us may be transferred, processed, and stored anywhere in the world, including, but not limited to, the United States or other countries, which may have data protection laws that are different from the laws where you live. We endeavor to safeguard your information consistent with the requirements of applicable laws.
             The files containing your information will be on our servers and those of our service providers and will be accessible to persons that require it for the purposes of their duties. Information may be accessible to the courts and the law enforcement and national security authorities of the United States. To obtain more information about our policies and practices with respect to service providers outside Canada, please contact us as set forth below.
             For Australian users, except in some cases where we may rely on an exception under the Privacy Act, we will take reasonable steps to ensure that such overseas recipients do not breach the Australian Privacy Principles in the Privacy Act in relation to such information.
@@ -226,9 +232,11 @@ const Privacy = () => {
             If the portable memory needs to be transferred via media such as CDs and DVDs, it is encrypted with cryptographic methods and the cryptographic key is kept in a different environment,
             If transfer is made between servers in different physical environments, data transfer is performed by establishing VPN between servers, and
             Even if the data is required to be transferred through paper medium, necessary precautions are taken against risks such as theft, loss or being seen by unauthorized persons of confidential information and / or documents containing your personal information, and the document is sent in the category of "classified documents".
-            RETENTION OF PERSONAL INFORMATION 
+            
+            <Heading size="1" sx={{ mb: '5px' }}>RETENTION OF PERSONAL INFORMATION </Heading>
             We store the personal information we collect as described in this Privacy Notice for as long as you use our Services or as necessary to fulfill the purpose(s) for which it was collected, provide our Services, resolve disputes, establish legal defenses, conduct audits, pursue legitimate business purposes, enforce our agreements, and comply with applicable laws.  
-            SUPPLEMENTAL NOTICE FOR CALIFORNIA RESIDENTS
+            
+            <Heading size="1" sx={{ mb: '5px' }}>SUPPLEMENTAL NOTICE FOR CALIFORNIA RESIDENTS</Heading>
             This Supplemental California Privacy Notice only applies to our processing of personal information that is subject to the California Consumer Privacy Act of 2018 (“CCPA”). The CCPA provides California residents with the right to know what categories of personal information Modulz has collected about them and whether Modulz disclosed that personal information for a business purpose (e.g., to a service provider) in the preceding 12 months. California residents can find this information below:
 
 
@@ -244,26 +252,31 @@ const Privacy = () => {
             Accessibility. This Privacy Notice uses industry-standard technologies and was developed in line with the World Wide Web Consortium’s Web Content Accessibility Guidelines, version 2.1. If you wish to print this policy, please do so from your web browser or by saving the page as a PDF. 
             California Shine the Light. The California “Shine the Light” law permits users who are California residents to request and obtain from us once a year, free of charge, a list of the third parties to whom we have disclosed their personal information (if any) for their direct marketing purposes in the prior calendar year, as well as the type of personal information disclosed to those parties.
             Right for minors to remove posted content. Where required by law, California residents under the age of 18 may request to have their posted content or information removed from the publicly-viewable portions of the Services by contacting us directly as set forth in Contact Us below.
-            SUPPLEMENTAL NOTICE FOR NEVADA RESIDENTS
+            
+            <Heading size="1" sx={{ mb: '5px' }}>SUPPLEMENTAL NOTICE FOR NEVADA RESIDENTS</Heading>
             If you are a resident of Nevada, you have the right to opt-out of the sale of certain Personal Information to third parties who intend to license or sell that Personal Information. You can exercise this right by contacting us at [support email] with the subject line “Nevada Do Not Sell Request” and providing us with your name and the email address associated with your account. Please note that we do not currently sell your Personal Information as sales are defined in Nevada Revised Statutes Chapter 603A. If you have any questions, please contact us as set forth below.
 
-            CHILDREN’S INFORMATION
+            <Heading size="1" sx={{ mb: '5px' }}>CHILDREN’S INFORMATION</Heading>
             The Services are not directed to children under 13 (or other age as required by local law), and we do not knowingly collect personal information from children.
 
             In Australia, if a user indicates they are under 15 and we are required to obtain the user’s consent (for example, for the collection of sensitive information), we will seek consent from the user’s parent or legal guardian.
 
             If you are a parent or guardian and believe your child has uploaded personal information to our site without your consent, you may contact us as described in “Contact Us” below. If we become aware that a child has provided us with personal information in violation of applicable law, we will delete any personal information we have collected, unless we have a legal obligation to keep it, and terminate the child’s account.
-            OTHER PROVISIONS
+            
+            <Heading size="1" sx={{ mb: '5px' }}>OTHER PROVISIONS</Heading>
             Third-Party Websites/Applications. The Services may contain links to other websites/applications and other websites/applications may reference or link to our Services. These third-party services are not controlled by us. We encourage our users to read the privacy policies of each website and application with which they interact. We do not endorse, screen or approve, and are not responsible for, the privacy practices or content of such other websites or applications. Providing personal information to third-party websites or applications is at your own risk. 
             Supervisory Authority. If you are located in the European Economic Area, Switzerland, the United Kingdom or Brazil, you have the right to lodge a complaint with a supervisory authority if you believe our processing of your personal information violates applicable law.  If you are based in Australia and you are not satisfied with how we have handled your data, you may wish to contact the Office of the Australian Information Commissioner.
             Changes to our Privacy Notice. We may revise this Privacy Notice from time to time in our sole discretion. If there are any material changes to this Privacy Notice, we will notify you as required by applicable law. You understand and agree that you will be deemed to have accepted the updated Privacy Notice if you continue to use our Services after the new Privacy Notice takes effect.
-            CONTACT US
-            If you have any questions about our privacy practices or this Privacy Notice, or to exercise your rights as detailed in this Privacy Notice, please contact us at:
-            [Company]
-            [Attn: Insert title of individual responsible for privacy]
-            [Insert Company mailing address]
-            [Insert toll free number]
-            [Insert Company email]
+            
+            <Heading size="1" sx={{ mb: '5px' }} id="contact">Contact us</Heading>
+            <Text as="p" size={3} sx={{ lineHeight: '21px', mb: 15 }}>If you have any questions about our privacy practices or this Privacy Notice, or to exercise your rights as detailed in this Privacy Notice, please contact us at:</Text>
+            <address style={{ fontStyle: 'initial' }}>
+              <Text as="p" size={3} sx={{ lineHeight: '21px' }}>Modulz, Inc</Text>
+              <Text as="p" size={3} sx={{ lineHeight: '21px' }}>Attn: Colm Tuite</Text>
+              <Text as="p" size={3} sx={{ lineHeight: '21px' }}>600 N. Broad Street</Text>
+              <Text as="p" size={3} sx={{ lineHeight: '21px' }}>Suite 5 #3495</Text>
+              <Text as="p" size={3} sx={{ lineHeight: '21px' }}>Middletown, DE 19709</Text>
+            </address>
         </Container>
       </Box>
     </Box>

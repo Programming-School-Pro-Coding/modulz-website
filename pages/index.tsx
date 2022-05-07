@@ -21,7 +21,7 @@ const Home = () => {
 
       <Container size={2} mt={6} sx={{ textAlign: 'center' }}>
         <Heading size={5} mb={3}>
-          The user interface design tool
+          The Best Organization for FREE Portfolio, Website templates
         </Heading>
       </Container>
 

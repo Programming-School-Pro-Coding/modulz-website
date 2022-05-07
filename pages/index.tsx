@@ -29,8 +29,8 @@ const Home = () => {
         <Heading as="h2" size={2} mb={6} sx={{ color: 'gray700', lineHeight: '3', fontWeight: 400 }}>
           Design in the target medium. Prototype with real components. Handoff production code.
         </Heading>
-        <MarketingButton as="a" href="https://modulz.typeform.com/to/fp4gBW" target="_blank" rel="noopener">
-          Apply for beta access
+        <MarketingButton as="a" href="https://form.typeform.com/to/YB3voyg3" target="_blank" rel="noopener">
+          Apply for Work in the organization
           <Box as="span" ml={2} aria-hidden>
             <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
               <path d="M5.5 3.5L11.5 3.5L11.5 9.5" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" />
